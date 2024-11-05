@@ -1,0 +1,136 @@
+body {
+
+    font-family: 'Arial', sans-serif;
+
+    background-color: #fce4ec;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    margin: 0;
+
+
+}
+
+
+.container {
+
+    text-align: center;
+
+    background-color: #fff;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+/* Staggering the fade-in effect for each element */
+h1.fade-in {
+  color:#e91e63;
+  font-size:36px;
+  animation-delay: 0.5s;
+}
+
+h2.fade-in {
+   color:#ad1457;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+  animation-delay: 1s;
+}
+
+h3.fade-in {
+     color: #e91e63;
+   font-size: 26px;
+  animation-delay: 1.5s;
+}
+
+p.fade-in {
+      color: #880e4f;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+
+  animation-delay: 2s;
+}
+
+button.fade-in {
+  animation-delay: 2.5s;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.yes-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.no-button {
+  background-color: #f44336;
+  color: white;
+}
+
+
+#responseMessage {
+    border: 2px solid #fff; /* Warna hijau */
+    border-radius: 0px; /* Membuat sudut melengkung */
+    padding: 20px; /* Memberikan ruang di dalam border */
+    margin-top: 20px; /* Memberikan jarak dari elemen di atasnya */
+    background-color: #f9f9f9; /* Warna latar belakang ringan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan untuk efek 3D */
+    text-align: center; /* Mengatur teks berada di tengah */
+}
+
+#whatsappButton {
+    display: block;
+    margin: 20px auto 0; /* Center tombol di bawah teks response */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #25D366; /* Warna hijau khas WhatsApp */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+#whatsappButton:hover {
+    background-color: #1EBE57;
+}
+.hidden {
+
+    display: none;
+    
+}
